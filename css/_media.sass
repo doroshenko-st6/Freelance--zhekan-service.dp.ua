@@ -1,0 +1,358 @@
+@media screen and (max-width: 1400px)
+    .container
+        max-width: 980px
+    .main__title
+        font-size: 50px
+    .info__form
+        left: 75%
+    .info__contact
+        margin-left: 10px
+    .aboutme__skill
+        width: 75%
+    .aboutme::before
+        display: none
+    .service__block
+        flex-direction: column
+    .service__block-text
+        width: 100%
+        padding: 10px
+    .service__block-icon
+        padding: 20px
+    .work__block
+        align-items: center
+    .work__block-img
+        width: 45%
+    .work::before
+        display: none
+    .map:before
+        display: none
+   
+@media screen and (max-width: 980px)
+    body.lock
+        overflow: hidden
+    .container
+        max-width: 860px
+    .header__text div:nth-child(1)
+        font-size: 30px
+    .header__text div:nth-child(2)
+        font-size: 16px
+    .header__logo img
+        max-width: 78px
+    .header__text
+        margin-left: 10px
+    .header__body
+        height: 100px !important
+    .header__list li
+        border-bottom: none
+        &:hover
+            border-bottom: none
+            color: #fce700
+    .main
+        border-top: 10px solid #fce700
+    .header__burger
+        display: block
+        position: relative
+        width: 30px
+        height: 20px
+        z-index: 3
+    .header__burger span
+        position: absolute
+        background-color: #fff
+        left: 0
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: all .2s ease 0s
+    .header__burger::before, .header__burger::after
+        content: ""
+        background-color: #fff
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        transition: all .2s ease 0s
+    .header__burger::before
+        top: 0
+    .header__burger::after
+        bottom: 0
+    .header__burger.active span
+        transform: scale(0)
+    .header__burger.active::before
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active::after
+        transform: rotate(-45deg)
+        bottom: 9px
+    .header__menu
+        position: fixed
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgb(34, 34, 34)
+        padding: 130px 10px 30px 10px
+        transition: all .4s ease 0s
+        overflow: auto
+    .header__menu.active
+        top: 0
+    .header__list
+        display: block
+        border-top: 1px solid #fce700
+        padding-top: 18px
+    .header__list a
+        display: block
+    .header__list li
+        margin-left: 0
+        margin: 0 0 40px 0
+    .contact
+        flex-direction: row
+
+    .main__title
+        font-size: 45px
+    .aboutme__skill
+        width: 85%
+    .work__block
+        flex-direction: column
+    .work__block-img
+        width: 41%
+    .work__block-slider img
+        height: 510px
+    .info__contact
+        margin-left: 15px
+    .info__form
+        margin-left: 30px
+        width: 75%
+    
+
+@media screen and (max-width: 860px)
+    .container
+        max-width: 767px
+    p
+        font-size: 15px
+    .header__body
+        height: 80px
+    .header .contact
+        margin-left: 5%
+    .header .contact__info-phone
+        font-size: 15px
+    .main
+        border-top: 10px solid #fce700
+        border-bottom: 30px solid #eee
+    .main__title
+        font-size: 40px
+    .aboutme
+        padding: 50px 20px 80px 20px
+    .aboutme__skill
+        width: 95%
+        padding: 15px
+        &-icon i
+            font-size: 45px
+        &-icon div
+            font-size: 15px
+    .service
+        padding: 100px 0 30px 0
+    .service__block-icon i
+        font-size: 36px
+    .info
+        padding: 30px 0
+    .info__block
+        margin-top: 15px
+        width: 100%
+        flex-direction: column
+    .info__contact
+        margin-left: initial
+    .info__form
+        margin-top: 15px
+        margin-left: initial
+        width: 85%
+        padding: 30px
+    .work
+        padding: 30px 0 40px 0
+        &__block
+            margin-top: 15px
+    .work__block-slider img
+        height: 490px
+    .main::after, .main::before
+        height: 10px
+    .slick-dots
+        top: 100%
+    .footer
+        padding: 20px 0
+    .map
+        padding: 30px 0
+    .location
+        padding-top: 15px
+
+@media screen and (max-width: 767px)
+    .container
+        max-width: 641px
+    .header__body
+        height: 70px !important
+    .social-icons__item
+        width: 70%
+    .social-icons__item
+        font-size: 22px
+    .header
+        padding: 15px 0
+    .header__img 
+        width: 70px
+    .header__text div:nth-child(1)
+        font-size: 28px
+    .header__text div:nth-child(2)
+        font-size: 15px
+    .header .contact
+        margin-left: 2%
+    .header__text
+        margin-left: 10px
+    .header__text div:nth-child(1)
+        font-size: 28px
+    p
+        font-size: 14px
+    .service__block-icon
+        padding: 12px
+    .service__block-text
+        padding: 0
+    .main__title
+        font-size: 35px
+    .info__form
+        width: 90%
+    .aboutme__block-text__par
+        font-size: 18px
+    .aboutme__block-text__par h3:nth-of-type(2), .aboutme__block-text__par h3:last-child
+        font-size: 16px
+    .aboutme__block-text__img
+        width: 220px
+    .aboutme__block-text__par
+        padding: 15px
+    .title h1
+        font-size: 25px
+    .slick-dots button
+        width: 17px
+
+@media screen and (max-width: 640px)
+    .container
+        max-width: 480px
+    .main__title
+        font-size: 32px
+    .header .contact
+        flex-direction: column
+        align-items: center
+    .header .contact__info-phone
+        border: 1px solid #fce700
+    .social-icons__link
+        font-size: 20px
+    .aboutme
+        padding: 15px 20px 80px 20px
+    .aboutme__block-text
+        flex-direction: column
+    .aboutme__block-text__par
+        width: 100%
+        text-align: center
+    .work__block-img
+        width: 50%
+    .aboutme__block-text__img
+        width: 200px
+    .info__form h2, .info__contact h2
+        font-size: 20px
+    .service
+        padding-top: 150px
+    .service__block
+        margin-top: 20px
+    .service__block-icon
+        padding: 15px
+    .aboutme__block-text__img
+        z-index: 2
+        border: 1px solid #222
+    .aboutme__skill-icon div
+        margin-top: 5px
+    .aboutme__skill
+        width: 65%
+        padding: 0
+    .aboutme__skill-icon
+        padding: 10px
+        width: 50%
+    .aboutme__skill-list
+        width: 100%
+        flex-wrap: wrap
+        display: flex
+        padding: 0 12px
+        border: 1px solid #222
+    .aboutme__skill-icon i
+        font-size: 35px
+    .aboutme__skill-icon div
+        font-size: 14px
+    .aboutme__skill
+        top: 105%
+    .map
+        padding: 20px 0
+    .location
+        padding-top: 12px
+    .footer
+        border-top: 2px solid #eee
+    
+
+@media screen and (max-width: 480px)
+    .container
+        min-width: 320px
+    .header__logo img
+        max-width: 65px
+    .mobile-button
+        left: 90%
+    .main__title
+        font-size: 28px
+    .header .contact
+        margin-left: 0
+        display: none
+    .header__text div:nth-child(1)
+        font-size: 22px
+    .header__text div:nth-child(2)
+        font-size: 14px
+    .header__img
+        width: 55px
+    .aboutme
+        padding: 10px 0 80px 0
+    .aboutme__block-text__img
+        width: 155px
+    .work__block-slider
+        width: 82%
+    .work__block-slider img
+        height: auto
+    .slick-dots
+        left: 0
+        width: 100%
+    .slick-dots button
+        width: 8px
+    .work__block-slider::before
+        display: none
+    .slick-arrow
+        font-size: 35px
+    .slick-prev
+        left: -6%
+    .slick-next
+        right: -6%
+    .info
+        padding: 20px 0
+    .work
+        padding: 20px 0 30px 0
+    .header, .footer
+        padding: 10px 0
+    .info__form
+        width: 100%
+        text-align: center
+        padding: 12px 10px
+    .form button
+        margin: auto
+        margin-top: 15px
+        padding: 12px
+    .footer
+        border-top: 1px solid #eee
+    .footer__block
+        flex-wrap: wrap
+    .footer__block div:nth-child(3)
+        margin-left: 0
+        width: 100%
+        line-height: 150%
+    .aboutme__block-text__img
+        width: 170px
+    .main__title::after, .main__title::before
+        height: 10px

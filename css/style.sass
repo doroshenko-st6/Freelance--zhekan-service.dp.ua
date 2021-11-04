@@ -1,0 +1,523 @@
+@import fonts
+@import reset
+
+html
+    font-family: "NotoSans"
+
+p
+    font-size: 17px
+
+.send
+    content: 'send'
+    position: fixed
+    width: 200px
+    height: 100px
+    top: 0
+    left: 0
+    
+
+.container
+    width: 100%
+    max-width: 1180px
+    margin: 0 auto
+    padding-left: 10px
+    padding-right: 10px
+
+.title
+    text-align: center
+    display: inline
+.social-icons
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__item
+        font-size: 24px
+    &__link
+        padding: 0 5px
+        transition: .3s
+    &__link:hover
+        color: #fce700
+
+.mobile-button
+    font-size: 36px
+    position: absolute
+    color: #fce700
+    top: 50%
+    left: 95%
+    transform: translate(-50%, -50%)
+    visibility: hidden
+.close-button
+        font-size: 36px
+        position: absolute
+        color: #fce700
+        top: 50%
+        left: 95%
+        transform: translate(-50%, -50%)
+        visibility: hidden
+.header
+    color: #fff
+    position: relative
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgb(34, 34, 34)
+        z-index: 3
+.header__body
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 110px
+    align-items: center
+.header__logo
+    display: flex
+    align-items: center
+    overflow: hidden
+    position: relative
+    z-index: 3
+.header__logo img
+    max-width: 85px
+.header__text
+    text-align: center
+    margin-left: 15px
+    font-weight: 700
+.header__text div:nth-child(1)
+    font-size: 32px
+    text-transform: uppercase
+.header__text div:nth-child(2)
+    font-size: 18px
+    text-transform: initial
+    font-weight: normal
+.header__burger
+    display: none
+.header__list
+    display: flex
+    position: relative
+    z-index: 3
+.header__list li
+    margin-left: 30px
+    border-bottom: 2px solid #00000000
+    transition: .3s
+    &:hover
+        border-bottom: 2px solid #fce700
+.header__list li:nth-of-type(1)
+    margin-left: initial
+.header__link
+
+
+.contact
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    position: relative
+    z-index: 3
+    &__info
+        padding: 10px
+        &-phone
+            border: 2px solid #fce700
+            font-size: 18px
+            font-weight: 700
+            color: #fff
+            padding: 5px
+            transition: .3s
+
+.main
+    border-top: 15px solid #fce700
+    border-bottom: 60px solid #eee
+    background-image: url('../img/vorota_service_in_dnepr.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    & img
+        width: 100%
+    &__title
+        text-align: center
+        position: relative
+        font-size: 55px
+        font-weight: 700
+        color: #fff
+        text-transform: uppercase
+        line-height: 200%
+        &::after, &::before
+            position: absolute
+            content: ""
+            width: 20%
+            height: 14px
+            background-color: #fce700
+            z-index: 1
+            transform: translate(-50%, -50%) skew(-30deg)
+        &::after
+            top: -10%
+            left: 10%
+        &::before
+            top: 110%
+            left: 90%
+
+.aboutme
+    position: relative
+    background-color: #696969
+    padding: 80px 20px 130px 20px
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%) skew(-14deg)
+        height: calc( 100% + 2px )
+        background-color: #eee
+    &::before
+        left: 10%
+        width: 30px
+    &__block-text
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        &__par
+            padding: 20px
+            font-size: 22px
+            width: 50%
+            font-style: italic
+        &__par h3
+            margin-bottom: 20px
+        &__par h3:nth-of-type(2), &__par h3:last-child
+            font-weight: normal
+            font-size: 17px
+        &__par h3:last-child
+            margin-bottom: initial
+        &__img
+            padding: 5px
+            width: 250px
+            border-radius: 50%
+            background-color: #fce700
+            box-sizing: content-box
+    &__skill
+        width: 55%
+        position: absolute
+        top: 0
+        left: 0
+        transform: translate(-50%,-50%)
+        left: 50%
+        top: 100%
+        background-color: #fce700
+        padding: 20px
+        &-list
+            display: flex
+            justify-content: space-between
+        &-icon
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-icon i
+            font-size: 60px
+        &-icon div
+            font-size: 17px
+            font-weight: 700
+            margin-top: 10px
+            text-align: center
+            
+.service
+    background-color: #eee
+    padding: 140px 0 60px 0
+    &__block img
+        width: 100%
+    &__block
+        display: flex
+        justify-content: space-between
+        background-color: #222
+        margin-top: 30px
+        &-text
+            width: 50%
+            color: #fff
+            padding: 25px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &-icon
+            display: flex
+            align-items: center
+        &-icon i
+            color: #ffea00
+            font-size: 40px
+        &-icon p
+            margin-left: 12px
+
+.work
+    padding: 60px 0
+    background-color: #696969
+    color: #fff
+    position: relative
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%) skew(-14deg)
+        height: calc( 100% + 2px )
+        background-color: #eee
+        z-index: 1
+    &::before
+        left: 10%
+        width: 30px
+    &__block
+        display: flex
+        align-items: flex-start
+        justify-content: space-evenly
+        margin-top: 30px
+        &-img
+            width: 52%
+            border: 5px solid #ffea00
+            z-index: 2
+        &-img img
+            width: 100%
+        &-slider
+            padding: 10px
+            box-sizing: content-box
+            width: 350px
+            position: relative
+            z-index: 1
+            &::before
+                position: absolute
+                content: ''
+                top: 13%
+                left: 80%
+                width: 180px
+                height: 180px
+                background-color: #eee
+                transform: translate(-50%, -50%)
+                z-index: -1
+            &__item
+                width: 100%
+        &-slider img
+            height: 540px
+
+// SLIDER--------------------------------------------
+
+.slick-slide:focus 
+  outline: none
+.slick-slide 
+  position: relative
+.slick-dots 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  line-height: 0
+  position: absolute
+  z-index: 99
+  top: calc( 100% + 20px )
+  left: 0
+  width: 100%
+.slick-dots button 
+    width: 20px
+    height: 7px
+    font-size: 0
+    padding: 3px
+    transition: .3s
+    background-color: #eee
+.slick-dots li + li
+    margin-left: 10px
+.slick-active button
+    background-color: #ffea00
+    transform: scale(1.3)
+.slick-arrow
+    border: none
+    background-color: inherit
+    font-size: 45px
+    color: #ffea00
+    position: absolute
+    top: 50%
+    transition: .3s
+.slick-prev 
+    left: calc( 0% - 32px)
+.slick-next
+    right: calc( 0% - 32px)
+
+// ------------------------------------------------------
+  
+.info
+    color: #fff
+    padding: 60px 0 170px 0
+    border-top: 30px solid #eee
+    background-image: url('../img/remot_in_dnepr_vorota.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &__title
+        color: #000
+    &__block
+        display: inline-flex
+        margin-top: 30px
+        justify-content: revert
+        align-items: center
+    &__contact
+        display: inline-flex
+        flex-direction: column
+        background-color: rgba(0, 0, 0, .7)
+        padding: 30px 55px
+        font-weight: 700
+        font-size: 20px
+        height: 50%
+        margin-left: -30px
+        __info-phone
+            border: none
+    &__contact > *
+        margin-bottom: 15px
+    &__contact h2
+        font-size: 24px
+    &__contact p:nth-child(2)
+        font-weight: 400
+        margin-bottom: 5px
+    &__contact p:nth-child(5)
+        font-weight: 400
+        margin-bottom: 5px
+    &__contact div
+        margin-bottom: initial
+    &__form
+        color: #000
+        display: inline-flex
+        flex-direction: column
+        background-color: rgba(255, 234, 0, .75)
+        padding: 30px 55px
+        width: 50%
+        margin-left: 45px
+
+.main-button
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 700
+    font-size: 15px
+    background-color: #222
+    color: #ffea00
+    width: 220px
+    margin-top: 24px
+    padding: 17px 37px
+    transition: .3s
+    &:hover
+        background-color: lighten(#222,15%)
+
+.icons-small
+    display: inline-flex
+    justify-content: space-between
+    color: #ffea00
+    transition: .3s
+.info__contact .social-icons__link:hover
+    color: #fff
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+.form
+    display: inline-flex
+    flex-direction: column
+    justify-content: space-between
+    font-size: 15px
+    margin-top: 20px
+
+.form__input, .form__num, .form__textar
+    padding: 20px
+    border-bottom: 1px solid #222
+
+.form input::placeholder 
+    font-family: "Tahoma"
+    font-size: 14px
+    font-weight: 700
+    letter-spacing: 1px
+    color: rgb(0, 0, 0)
+
+textarea::placeholder
+    font-family: "Tahoma"
+    font-size: 14px
+    font-weight: 700
+    letter-spacing: 1px
+    color: rgb(0, 0, 0)
+
+.form__textar
+    padding: 30px 20px 0px 20px
+    resize: none
+
+.form button
+    margin-top: 45px
+    display: block
+    text-align: center
+
+.footer
+    color: #eee
+    padding: 30px 0
+    background-color: #222
+    width: 100%
+    border-top: 3px solid #eee
+    text-align: center
+    &__block 
+        width: 100%
+        font-size: 13px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+    &__block div:nth-child(3)
+        margin-left: 5px
+
+.map
+    padding: 60px 0
+    background-color: #696969
+    text-align: center
+    color: #fff
+    border-top: 30px solid #eee
+    position: relative
+    z-index: 1
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%) skew(-14deg)
+        height: calc( 100% + 2px )
+        background-color: #eee
+        z-index: -1
+    &::before
+        left: 10%
+        width: 30px
+    &__title h1:nth-of-type(1)
+        color: #ffea00
+.location
+    padding-top: 30px
+    width: 100%
+    max-width: 1100px
+        
+@import media
+
+
+    
+
+
+
+
+            
+            
+
+
+
+
+
+            
+
+        
+            
+
+
+            
+
+
+        

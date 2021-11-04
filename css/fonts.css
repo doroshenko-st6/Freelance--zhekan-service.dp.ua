@@ -1,0 +1,35 @@
+@font-face {
+  src: url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/MyriadPro-Semibold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/PTSans-Bold.ttf") format("truetype");
+  font-family: "PTSans";
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/PTSans-Regular.ttf") format("truetype");
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/Tahoma-Regular.ttf") format("truetype");
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+}
+/*# sourceMappingURL=fonts.css.map */
